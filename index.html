@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Call Of Duty - Mobile"/>
+    <meta name="author" content="Website design with HTML, CSS, Bootstrap and JavaScript" />
+    <title>Call Of Duty - Mobile</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-top" id="page-top">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg" id="mainNav">
+      <div class="container px-5">
+        <a href="#page-top">
+          <img class="img-fluid" id="logo3" src="img/logo.png" alt="Logo" />
+        </a>
+        <button
+          id="whtbtn"
+          class="btn btn-danger d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-2 my-3 my-lg-0">
+            <li class="nav-item">
+              <a
+                id="redd"
+                class="nav-link my-2 me-lg-3 flame-element"
+                href="#dice"
+              >
+                Bullet
+                <div class="flame-container"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="red"
+                class="nav-link me-lg-3 my-2 flame-element"
+                href="#download"
+              >
+                Download
+                <div class="flame-container"></div>
+              </a>
+            </li>
+          </ul>
+          <button
+            id="btnW"
+            class="btn btn-outline-warning rounded-pill px-3 mb-2 mb-lg-0 flame-element"
+            data-bs-toggle="modal"
+            data-bs-target="#feedbackModal"
+          >
+            <span class="d-flex align-items-center">
+              <i class="bi bi-chat-text me-2"></i>
+              <span class="small">Send Feedback</span>
+            </span>
+            <div class="flame-container"></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <video class="video-background" autoplay muted loop>
+      <source src="img/codm-hero-video-desktop.mp4" type="video/mp4" />
+    </video>
+
+    <header class="masthead">
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-1 lh-1 mb-3">Call of Duty BLACK OPS</h1>
+              <p id="m1m" class="lead fw-normal mb-5">
+                Call of Duty Mobile, aksiyon dolu savaş deneyimi sunan popüler
+                bir FPS oyunudur. Çeşitli oyun modları, güçlü silahlar ve
+                taktiksel mücadelelerle oyunculara heyecan yaşatır.
+              </p>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"
+                  ><img
+                    class="app-badge"
+                    src="/img/google-play-badge.svg"
+                    alt="..."
+                /></a>
+                <a href="#!"
+                  ><img
+                    class="app-badge"
+                    src="/img/app-store-badge.svg"
+                    alt="..."
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="masthead-device-mockup">
+              <div class="img-fluid">
+                <img class="thy" src="img/guns.png" alt="Gif" />
+              </div>
+              <div class="img-fluid">
+                <img class="iphone" src="img/cod2.gif" alt="iPhone" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr class="red-hr" />
+    <aside class="text-center" id="bg2"></aside>
+    <hr class="red-hr" />
+    <section id="dice">
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-8 order-lg-1 mb-lg-0">
+            <div class="container-fluid px-5">
+              <div class="row gx-5">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img
+                      class="st1 hover-effect-image"
+                      src="/img/cod-sf2/perk-1.png"
+                      alt="Sticker"
+                    />
+                    <h3 class="font-alt1">Stamin-Up Soda</h3>
+                    <p class="mb-0">
+                      Oyuncunun koşma hızını ve dayanıklılığını artıran bir
+                      içecek. Haritada daha hızlı hareket etmeyi sağlar.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <div class="text-center">
+                    <img
+                      class="st1 hover-effect-image"
+                      src="img/cod-sf2/perk-4.png"
+                      alt="Sticker 2"
+                    />
+                    <h3 class="font-alt2">Vulture Aid Elixir</h3>
+                    <p class="mb-0">
+                      Öldürülen zombilerden cephane ve para bırakılmasını
+                      sağlar. Ayrıca oyuncuya düşmanları görmeyi kolaylaştıran
+                      bir görüş efekti verir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <div class="text-center">
+                    <img
+                      class="st1 hover-effect-image"
+                      src="/img/cod-sf2/perk-2.png"
+                      alt="Sticker 3"
+                    />
+                    <h3 class="font-alt3">Elemental Pop</h3>
+                    <p class="mb-0">
+                      Silahların rastgele ek cephane efektleri kazanmasını
+                      sağlar. Her ateş ettiğinde farklı bir Pack-a-Punch
+                      özelliği aktif olabilir.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <div class="text-center">
+                    <img
+                      class="st1 hover-effect-image"
+                      src="/img/cod-sf2/perk-3.png"
+                      alt="Sticker 3"
+                    />
+                    <h3 class="font-alt4">Jugger-Nog Soda</h3>
+                    <p class="mb-0">
+                      Oyuncunun canını artırarak daha fazla hasar almasına izin
+                      veren klasik bir perk içeceği. Zombi modunun en
+                      vazgeçilmez içeceklerinden biridir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-0">
+            <div class="masthead-device-mockup">
+              <div class="img-fluid">
+                <img id="boy1" src="img/cod-sf2/zombie.png" alt="" />
+              </div>
+              <div class="img-fluid">
+                <img id="boy2" src="img/cod-sf2/codgif.gif" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white character-showcase">
+      <div class="container py-5">
+        <hr class="yellow-hr" />
+        <h2 class="text-center mb-4 mt-4">KLASIKLEŞMIŞ KARAKTERLER</h2>
+        <p class="text-center mb-5">
+          Call of Duty: Black Ops ve Modern Warfare'deki bütün karakterler oyuna
+          geri dönüyor
+        </p>
+
+        <div class="row characters-row justify-content-center">
+          <div class="character-container col-12 col-md-6 col-lg">
+            <div class="character-card">
+              <img
+                src="img/slide/david.png"
+                alt="David Mason"
+                class="character-img"
+              />
+              <div class="character-info">
+                <h3 class="character-name">DAVID MASON</h3>
+                <p class="character-desc">Black Ops II'nin ana karakteri</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="character-container col-12 col-md-6 col-lg">
+            <div class="character-card">
+              <img
+                src="img/slide/mason.png"
+                alt="Alex Mason"
+                class="character-img"
+              />
+              <div class="character-info">
+                <h3 class="character-name">ALEX MASON</h3>
+                <p class="character-desc">
+                  Black Ops serisinin efsanevi karakteri
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="character-container col-12 col-md-6 col-lg">
+            <div class="character-card">
+              <img
+                src="img/slide/ghost.png"
+                alt='Simon "Ghost" Riley'
+                class="character-img"
+              />
+              <div class="character-info">
+                <h3 class="character-name">SIMON "GHOST" RILEY</h3>
+                <p class="character-desc">Modern Warfare'in maskeli askeri</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="character-container col-12 col-md-6 col-lg">
+            <div class="character-card">
+              <img
+                src="img/slide/merrick.png"
+                alt="Thomas Merrick"
+                class="character-img"
+              />
+              <div class="character-info">
+                <h3 class="character-name">THOMAS MERRICK</h3>
+                <p class="character-desc">Ghosts'un Task Force komutanı</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="character-container col-12 col-md-6 col-lg">
+            <div class="character-card">
+              <img
+                src="img/slide/price.png"
+                alt="Captain Price"
+                class="character-img"
+              />
+              <div class="character-info">
+                <h3 class="character-name">JHON PRICE</h3>
+                <p class="character-desc">
+                  Task Force 141 birliğinin lideridir.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="character-container col-12 col-md-6 col-lg">
+            <div class="character-card">
+              <img
+                src="img/slide/zombie.png"
+                alt="Zombie"
+                class="character-img"
+              />
+              <div class="character-info">
+                <h3 class="character-name">UNKNOWN</h3>
+                <p class="character-desc">
+                  Graaagh... Braaains... huuungrii... eat... fleshhh... Raaaghhh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="yellow-hr" />
+      </div>
+    </section>
+
+    <section class="bgb3">
+      <div class="bgb3-container">
+        <div class="container px-5">
+          <h2 class="text-white display-1 lh-1 mb-4">
+            En iyi perklerini seç
+            <br />
+            Ve hayatta kal
+          </h2>
+          <a
+            class="btn btn-danger py-3 px-4 rounded-pill"
+            href="#!"
+            target="_blank"
+            >Download for free</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary" id="download">
+      <div class="container px-5">
+        <h2 class="text-center text-white font-alt mt-4 mb-5">
+          "Get the game now!"
+        </h2>
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+        >
+          <a class="me-lg-3 mb-4 mb-lg-0" href="#!">
+            <img
+              class="app-badge"
+              src="/img/google-play-badge.svg"
+              alt="Google play icon"
+            />
+            <a href="#!">
+              <img
+                class="app-badge"
+                src="/img/app-store-badge.svg"
+                alt="App store icon"
+              />
+            </a>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">Buğrahan Günel</div>
+          <a class="texttt1" href="#!">Privacy</a>
+          <span class="mx-1">·</span>
+          <a class="texttt1" href="#!">Terms</a>
+          <span class="mx-1">·</span>
+          <a class="texttt1" href="#!">FAQ</a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-gradient-primary-to-secondary p-4 pd15">
+            <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">
+              Send Feedback
+            </h5>
+            <button
+              class="btn-close btn-close-white"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border-0 p-4">
+            <form
+              id="contactForm"
+              action="https://formsubmit.co/bugrahangunell34@gmail.com"
+              method="post"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name..."
+                />
+                <label for="name">Full Name</label>
+                <div class="invalid-feedback">A name is required.</div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  type="email"
+                  type="email"
+                  placeholder="name@example.com"
+                />
+                <label for="email">Email Address</label>
+                <div class="invalid-feedback">An email is required</div>
+                <div class="invalid-feedback">Email is not valid</div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 333-4477"
+                />
+                <label for="phone">Phone Number</label>
+                <div class="invalid-feedback">A phone number is required</div>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                </div>
+              </div>
+              <div class="d-grid">
+                <button
+                  class="btn btn-danger rounded-pill btn-lg"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="flame-effect.js"></script>
+  </body>
+</html>
